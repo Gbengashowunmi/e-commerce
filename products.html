@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marg Printing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader">
+        <h1>Loading...</h1>
+    </div>
+    
+        <header>
+            <ul>
+                <li><a style="color: black;" href="index.html">Home</a></li>
+                <li><a  style="color: black;" href="products.html">Products</a></li>
+                <li><a  style="color: black;" href="about.html">About</a></li>
+            </ul>
+            <h3 style="color: black;">MarG</h3>
+            <h5 style="color: black;">Icon</h5>
+        </header>
+    <div class="title">
+        <h3>Home/Products</h3>
+    </div>
+<div class="services">
+    <nav class="side">
+        <input type="text" placeholder="Search...">
+        <h3>Services</h3>
+        <p>All</p>
+        <p>Complimentary Card</p>
+        <p>Packaging</p>
+        <p>Signage</p>
+        <p>Sourveniers</p>
+        <p>Graphics</p>
+    </nav>
+    <section>
+        <div class="item" style="padding: 0px;">
+        
+            <div class="images"><img src="leah_2.jpg" alt="item1"> <a href="item1.html">love</a></div>
+            <p class="description">Paper Bag</p>
+            <p class="price"> <strong>$100.00</strong></p>
+        </div>
+        <div class="item">
+            <div class="images"><img src="almira mock up.jpg" alt="item1"> <p>love</p></div>
+            <p class="description">Complimentary Card</p>
+            <p class="price"> <strong>$100.00</strong></p>
+        </div>
+        <div class="item">
+            <div class="images"><img src="madade sticker i.jpg" alt="item1"> <p>love</p></div>
+            <p class="description">Complimentary Card</p>
+            <p class="price"> <strong>$100.00</strong></p>
+        </div>
+
+        <div class="item">
+            <div class="images"><img src="marg mug.jpg" alt="item1"> <p>love</p></div>
+            <p class="description">Complimentary Card</p>
+            <p class="price"> <strong>$100.00</strong></p>
+        </div>
+        <div class="item">
+            <div class="images"><img src="BIMBS.jpg" alt="item1"> <p>love</p></div>
+            <p class="description">Complimentary Card</p>
+            <p class="price"> <strong>$100.00</strong></p>
+        </div>
+        <div class="item">
+            <div class="images"><img src="Book_Mockup_02.jpg" alt="item1"> <p>love</p></div>
+            <p class="description">Complimentary Card</p>
+            <p class="price"> <strong>$100.00</strong></p>
+        </div>
+    </section>
+</div>
+
+
+<nav
+class="add-frame-container">
+<hamburger class="cancel">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</hamburger>
+<!-- <h2 style="text-align: center;">Your Cart</h2> -->
+    <div class="add-frame-content">
+       
+        <div class="each-item">
+            <img src="leah_2.jpg" style="width: 150px; height: 100%;" alt="IMAGE" class="selected-item">
+            <div class="details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><strong>$price</strong></p>
+                <p class="remove">remove</p>
+            </div>
+    </div>
+
+    </div>
+</nav>
+    
+
+<div class="overlay"></div>
+    
+<script src="script.js"></script>
+<script>
+    const servicesFixed = document.querySelector('.side');
+    window.addEventListener('scroll', ()=>{
+    console.log(window.pageYOffset);
+    if(window.pageYOffset >380){
+        servicesFixed.classList.add('sideFix');
+        // console.log('servicess');
+    }
+    else{
+        servicesFixed.classList.remove('sideFix');
+    }
+    
+})
+const preloader = document.querySelector('.preloader');
+    window.addEventListener('load',()=>{
+        preloader.classList.add('preloader-hidden')
+    })
+</script>
+</body>
+</html>
